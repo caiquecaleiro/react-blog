@@ -1,0 +1,38 @@
+{
+  "name": "react-blog",
+  "version": "1.0.0",
+  "description": "A simple Blog application using React + Redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiquecaleiro/react-blog.git"
+  },
+  "keywords": [],
+  "author": "Caique Caleiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiquecaleiro/react-blog/issues"
+  },
+  "homepage": "https://github.com/caiquecaleiro/react-blog#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "eslint": "^3.8.1",
+    "eslint-plugin-react": "^6.4.1",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4"
+  }
+}
