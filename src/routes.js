@@ -3,9 +3,11 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 import PostList from './components/PostList';
+import PostsNew from './components/PostsNew';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={PostList} />
+    <Route path="posts/new" component={PostsNew} />
   </Route>
 );
