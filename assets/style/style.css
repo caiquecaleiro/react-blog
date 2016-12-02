@@ -2,10 +2,6 @@
   margin-left: 5px;
 }
 
-.jumbotron {
-  margin-top: 20px;
-}
-
 .italic {
   font-style: italic;
 }
@@ -56,12 +52,12 @@ label {
   font-style: italic;
 }
 
-.margin-top-25px {
-  margin-top: 25px;
-}
-
 .invalid label:after {
   content: '*';
   color: red;
   margin-left: 5px;
+}
+
+.container {
+  margin-top: 25px;
 }
