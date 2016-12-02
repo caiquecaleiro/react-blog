@@ -20,32 +20,34 @@ class PostsNew extends Component {
     const { fields: { title, categories, content }, handleSubmit } = this.props;
 
     return (
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <h3>Create a new post</h3>
-        <div className={`form-group ${title.touched && title.invalid ? 'has-danger' : ''}`}>
-          <label>Title</label>
-          <input type="text" className="form-control" {...title} />
-          <div className="text-help form-control-label">
-            {title.touched ? title.error : ''}
+      <div className="margin-top-25px">
+        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+          <h3>Create a new post</h3>
+          <div className={`form-group ${title.touched && title.invalid ? 'invalid' : ''}`}>
+            <label>Title</label>
+            <input type="text" className="form-control" {...title} />
+            <div className="text-help form-control-label">
+              {title.touched ? title.error : ''}
+            </div>
           </div>
-        </div>
-        <div className={`form-group ${categories.touched && categories.invalid ? 'has-danger' : ''}`}>
-          <label>Categories</label>
-          <input type="text" className="form-control" {...categories}/>
-          <div className="text-help form-control-label">
-            {categories.touched ? categories.error : ''}
+          <div className={`form-group ${categories.touched && categories.invalid ? 'invalid' : ''}`}>
+            <label>Categories</label>
+            <input type="text" className="form-control" {...categories}/>
+            <div className="text-help form-control-label">
+              {categories.touched ? categories.error : ''}
+            </div>
           </div>
-        </div>
-        <div className={`form-group ${content.touched && content.invalid ? 'has-danger' : ''}`}>
-          <label>Content</label>
-          <textarea type="text" className="form-control" {...content}/>
-          <div className="text-help form-control-label">
-            {content.touched ? content.error : ''}
+          <div className={`form-group ${content.touched && content.invalid ? 'invalid' : ''}`}>
+            <label>Content</label>
+            <textarea type="text" className="form-control" {...content}/>
+            <div className="text-help form-control-label">
+              {content.touched ? content.error : ''}
+            </div>
           </div>
-        </div>
-        <button type="submit" className="btn btn-primary">Save</button>
-        <Link to="/" className="btn btn-danger margin-left-5px">Cancel</Link>
-      </form>
+          <button type="submit" className="btn btn-primary">Save</button>
+          <Link to="/" className="btn btn-danger margin-left-5px">Cancel</Link>
+        </form>
+      </div>
     );
   }
 }

@@ -28,7 +28,7 @@ class PostsShow extends Component {
     return (
       <div>
         <div className="jumbotron">
-          <h3 className="display-4">{post.title}</h3>
+          <h4 className="display-4">{post.title}</h4>
           <p className="lead">{post.content}</p>
           <hr className="my-2"/>
           <Link to="/" className="btn btn-primary">Back</Link>

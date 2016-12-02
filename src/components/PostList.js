@@ -23,9 +23,9 @@ class PostList extends Component {
 
   render() {
     return (
-      <div className="post-list">
+      <div>
         <h1 className="display-4">React Blog</h1>
-        <hr className="my-2"/>
+        <hr className="white-line my-2"/>
         <h3 className="italic">Your posts</h3>
         <ul className="list-group italic">
           {this.renderPosts()}

@@ -14,12 +14,12 @@ body {
   background-color: #20466c;
 }
 
-.post-list h1.display-4  {
+h1.display-4  {
   text-align: center;
   color: #87ceeb;
 }
 
-.post-list h3 {
+h3, h1 {
   color: #87ceeb;
 }
 
@@ -32,11 +32,11 @@ li a {
 }
 
 li a:hover {
-  color: white;
+  color: #fff;
 }
 
-.post-list hr {
-  background-color: white;
+.white-line {
+  background-color: #fff;
 }
 
 .new-link {
@@ -44,5 +44,24 @@ li a:hover {
 }
 
 .new-link a {
-  color: white;
+  color: #fff;
+}
+
+label {
+  color: #87ceeb;
+}
+
+.text-help.form-control-label {
+  color: #dcdcdc;
+  font-style: italic;
+}
+
+.margin-top-25px {
+  margin-top: 25px;
+}
+
+.invalid label:after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
 }
