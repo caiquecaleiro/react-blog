@@ -5,3 +5,44 @@
 .jumbotron {
   margin-top: 20px;
 }
+
+.italic {
+  font-style: italic;
+}
+
+body {
+  background-color: #20466c;
+}
+
+.post-list h1.display-4  {
+  text-align: center;
+  color: #87ceeb;
+}
+
+.post-list h3 {
+  color: #87ceeb;
+}
+
+.list-group-item {
+  background-color: #20466c;
+}
+
+li a {
+  color: #bec6ce;
+}
+
+li a:hover {
+  color: white;
+}
+
+.post-list hr {
+  background-color: white;
+}
+
+.new-link {
+  margin-top: 10px;
+}
+
+.new-link a {
+  color: white;
+}

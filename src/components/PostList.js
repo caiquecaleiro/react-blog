@@ -23,16 +23,18 @@ class PostList extends Component {
 
   render() {
     return (
-      <div>
-        <div className="text-xs-right">
-          <Link to="/posts/new" className="btn btn-primary">
-            Add a Post
-          </Link>
-        </div>
-        <h3>Posts</h3>
-        <ul className="list-group">
+      <div className="post-list">
+        <h1 className="display-4">React Blog</h1>
+        <hr className="my-2"/>
+        <h3 className="italic">Your posts</h3>
+        <ul className="list-group italic">
           {this.renderPosts()}
         </ul>
+        <div className="new-link">
+          <Link to="/posts/new">
+            Add a new post
+          </Link>
+        </div>
       </div>
     );
   }
