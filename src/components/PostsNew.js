@@ -45,7 +45,7 @@ class PostsNew extends Component {
         </div>
         <button type="submit" className="btn btn-primary">Save</button>
         <Link to="/" className="btn btn-danger margin-left-5px">Cancel</Link>
-        </form>
+      </form>
     );
   }
 }
